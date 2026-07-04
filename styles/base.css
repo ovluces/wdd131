@@ -17,7 +17,6 @@
 * {
   margin: 0;
   padding: 0;
-  /* border: #2f1812 0.5px solid; */
 }
 
 body {
@@ -36,7 +35,6 @@ header {
   text-align: center;
   align-content: end;
   height: 100px;
-
 }
 
 main {
@@ -53,8 +51,6 @@ main {
   width: 100%;
 }
 
-
-
 nav {
   display: block;
   max-width: 100%;
@@ -70,7 +66,6 @@ nav {
 
 .navigation li {
   flex: 1 1 auto;
-
 }
 
 .navigation a {
@@ -117,7 +112,6 @@ nav {
   color: var(--card-font-color);
   height: 2rem;
   align-content: center;
-
 }
 
 .card div {
@@ -127,15 +121,12 @@ nav {
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
-  /* border: 2px solid rgb(6, 193, 68); */
-
 }
 
 .card p {
 
   flex-basis: 60%;
   font-size: medium;
-  /* border: 2px solid rgb(6, 193, 137); */
 }
 
 .card img {
@@ -148,7 +139,6 @@ nav {
 
 .card h3 {
   flex-basis: 100%;
-  /* border: 2px solid rgb(6, 193, 137); */
   font-size: large;
 }
 
