@@ -9,7 +9,6 @@
   --navigation-hover-font-color: #000;
   --main-bg: #fff;
   --main-font-color: #000;
-
   --card-bg-title: #1d4d72;
   --card-font-color: #fff;
 }
@@ -54,7 +53,6 @@ main {
 nav {
   display: block;
   max-width: 100%;
-  /* border: #000 1px solid; */
 }
 
 .navigation {
@@ -99,7 +97,7 @@ nav {
 }
 
 .card {
-  border: #000 1px solid;
+  border: var(--main-font-color) 1px solid;
   border-radius: 12px;
   font-size: 0.65rem;
   background-color: var(--main-bg);
@@ -132,7 +130,7 @@ nav {
 .card img {
   width: 200px;
   height: auto;
-  border: 1px solid black;
+  border: 1px solid var(--main-font-color);
   padding: 3px;
   flex-basis: 30%;
 }
