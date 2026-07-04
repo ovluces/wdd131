@@ -143,6 +143,7 @@ nav {
 .card li {
   list-style-position: inside;
   font-size: medium;
+  padding: 20px;
 }
 
 footer {
