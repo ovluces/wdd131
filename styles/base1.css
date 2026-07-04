@@ -41,7 +41,7 @@ header {
 
 main {
   width: 100%;
-  display: block;
+  /* display: block; */
 }
 
 .menu {
@@ -127,7 +127,7 @@ nav {
   gap: 20px;
   flex-wrap: wrap;
   padding: 20px;
-  /* border: 2px solid rgb(6, 193, 68); */
+  border: 2px solid rgb(6, 193, 68);
 
 }
 
