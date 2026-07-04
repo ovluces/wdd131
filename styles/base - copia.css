@@ -1,14 +1,15 @@
 :root {
-  --header-footer-bg-color: #b78338;
+  --header-footer-bg-color: rgb(29, 77, 114);
   --header-footer-font-color: #fff;
-  --menu-bg-color: #915c4c;
+  --header-footer-font-alt-color: rgb(255, 220, 101);
+  --menu-bg-color: rgb(51, 51, 51);
   --menu-font-color: #fff;
   --navigation-font-color: #fff;
   --navigation-hover-color: #2f1812;
-  --main-bg: #40686a;
-  --main-font-color: #fff;
-  --aside-bg: #50291f;
-  --aside-font-color: #fff;
+  --main-bg: #fff;
+  --main-font-color: #000;
+  --card-bg-title: rgb(29, 77, 114);
+  --card-font-color: #fff;
 }
 
 * {
