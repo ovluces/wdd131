@@ -1,27 +1,4 @@
-:root {
-  --header-footer-bg-color: #1d4d72;
-  --header-footer-font-color: #fff;
-  --header-footer-font-alt-color: #ffdc65;
-  --menu-bg-color: #333333;
-  --menu-font-color: #fff;
-  --navigation-font-color: #fff;
-  --navigation-hover-color: #f7d050;
-  --navigation-hover-font-color: #000;
-  --main-bg: #fff;
-  --main-font-color: #000;
-  --card-bg-title: #1d4d72;
-  --card-font-color: #fff;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Roboto, sans-serif;
-}
 
 header {
   max-width: 1200px;
