@@ -68,3 +68,14 @@ figcaption {
   }
 
 }
+
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: block;
+  background-color: var(--header-footer-bg-color);
+  color: var(--header-footer-font-color);
+  font-size: 1.5rem;
+  height: auto;
+  text-align: center;
+}
