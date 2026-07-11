@@ -59,6 +59,10 @@ header h1 {
   content: "≡";
 }
 
+nav {
+  display: flex;
+}
+
 .navigation {
   list-style: none;
   margin: 0 auto;
@@ -97,4 +101,3 @@ header h1 {
 #menu.show::before {
   content: "X";
 }
-
