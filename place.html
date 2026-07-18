@@ -17,7 +17,7 @@
 
 <body>
   <header>
-    <h1>Venezuela</h1>
+    <h1 onload="calculateWindChill()">Venezuela</h1>
     <h2>
       ★&nbsp;&nbsp;&nbsp;&nbsp;★&nbsp;&nbsp;&nbsp;&nbsp;★&nbsp;&nbsp;&nbsp;&nbsp;★&nbsp;&nbsp;&nbsp;&nbsp;★&nbsp;&nbsp;&nbsp;&nbsp;★&nbsp;&nbsp;&nbsp;&nbsp;★&nbsp;&nbsp;&nbsp;&nbsp;★
     </h2>
@@ -51,14 +51,14 @@
     <section class="card weather">
       <h2>Weather</h2>
       <div>
-        <p class="left-item">Temperature:</p>
+        <p class="left-item">Temperature (ºC):</p>
         <p>temp</p>
         <p class="left-item">Conditions:</p>
         <p>Weather condition</p>
-        <p class="left-item">Wind:</p>
+        <p class="left-item">Wind (Km/h):</p>
         <p>Wind resp</p>
-        <p class="left-item">Wind Chill:</p>
-        <p>Wind Chill resp</p>
+        <p class="left-item">Wind Chill (ºC):</p>
+        <p id="windchill">Wind Chill resp</p>
       </div>
     </section>
 
