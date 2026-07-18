@@ -2,6 +2,7 @@
   --body-bg-color: rgb(93, 64, 55, 100%);
   --header-bg-color: rgb(255, 255, 0, 80%);
   --header-font-color: rgb(54, 34, 28);
+  --header-font-color: #36221c;
   --header-font-shadow-color: rgb(0, 0, 0, 100%);
   --footer-bg-color: rgb(255, 0, 0, 75%);
   --footer-font-color: rgb(255, 255, 255, 100%);
@@ -118,7 +119,19 @@ footer {
   grid-gap: 10px;
 }
 
+.weather img {
+  place-self: center;
+  grid-column: 1 / 3;
+  display: block;
+  height: 100px;
+  width: 100px;
+}
+
 .left-item {
   text-align: right;
   font-weight: bold;
+}
+
+.after::after {
+  content: "";
 }
