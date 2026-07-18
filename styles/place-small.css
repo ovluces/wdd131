@@ -1,20 +1,6 @@
-@media only screen and (min-width: 40em) {
-  /* .hero {
-    display: block;
-    /* border: var(--main-font-color) 1px solid; */
-  /* width: 800px; */
-
-  /* height: auto; */
-  /* object-fit: cover;
- } */
-
+@media only screen and (min-width: 650px) {
   .container {
-    /* height: 463px; */
     overflow: hidden;
-    /* width: 800px; */
-    /* margin: 10px; */
-
-
   }
 
   .hero {
@@ -22,24 +8,18 @@
     height: 100%;
   }
 
-
   .hero img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    /* object-fit: contain; */
-    /* object-fit: cover; */
   }
 
   .card {
-    /* border: var(--main-font-color) 1px solid; */
-
     background-color: var(--card-bg-color);
     position: relative;
-    /* overflow: hidden; */
     width: 300px;
-    width: 300px;
-    height: 200px;
+    height: auto;
+    border-radius: 3px;
   }
 
   .card h2 {
@@ -48,10 +28,24 @@
     left: -10px;
     background-color: var(--h2-bg-tr-color);
     color: var(--h2-font-color);
-    border-radius: 5px;
+    border-radius: 3px;
+    border: 1px var(--main-bg) solid;
     font-size: large;
     width: 75%;
     padding: 10px 20px;
+  }
+
+  .card div {
+    margin-top: 55px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .left-item {
+    text-align: right;
+    font-weight: bold;
   }
 
   .data {
@@ -67,4 +61,6 @@
     bottom: 10px;
     right: 10px;
   }
+
+
 }

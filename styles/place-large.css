@@ -20,7 +20,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* box-sizing: content-box; */
 }
 
 body {
@@ -30,21 +29,17 @@ body {
   min-height: 95vh;
   background-color: var(--body-bg-color);
   background-image: linear-gradient(var(--main-bg), var(--body-bg-color));
-  border: #808000 1px solid;
-  /* overflow: hidden; */
+  /* border: #808000 1px solid; */
 }
 
 header h1 {
   background-color: var(--header-bg-color);
-  /* color: var(--header-font-color); */
   color: white;
   text-align: center;
   align-content: center;
   font-size: 4rem;
   height: 6rem;
-  /* text-shadow: 3px 3px 1px var(--card-bg-color); */
   text-shadow: -1px -1px 2px var(--header-font-color), 3px 3px 2px var(--header-font-shadow-color);
-  /* overflow: hidden; */
 }
 
 header h2 {
@@ -54,27 +49,21 @@ header h2 {
   text-align: center;
   align-content: center;
   height: 1rem;
-  /* overflow: hidden; */
 }
 
-main {
-  /* display: none; */
+/* main {
   border: #800000 1px dashed;
-}
+} */
 
 .container {
   position: relative;
   display: inline-block;
-  /* width: 100%; */
-  border: #758000 1px dashed;
-  /* height: 100%; */
-  /* width: 100%; */
-  /* max-width: 7500px; */
+  /* border: #758000 1px dashed; */
   overflow: hidden;
 }
 
 .hero img {
-  border: #80007a 1px solid;
+  /* border: #80007a 1px solid; */
   display: block;
   object-fit: cover;
   width: 100%;
@@ -83,42 +72,53 @@ main {
 }
 
 
-
-
-/* .card h2 {
-  padding: 10px;
-  background-color: var(--header-footer-bg-color);
-  color: var(--card-font-color);
-  height: 2rem;
-  align-content: center;
-}
-
-.card div {
-  display: flex;
-  background-color: var(--main-bg);
-  align-items: start;
-  gap: 20px;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.card p {
-
-  flex-basis: 60%;
-  font-size: medium;
-} */
-
 footer {
   display: block;
   position: relative;
   top: -5px;
-  /* position: absolute; */
-  bottom: 0;
+  /* bottom: 0; */
   background-color: var(--footer-bg-color);
   color: var(--footer-font-color);
   text-align: center;
   align-content: center;
   font-size: 1rem;
   height: 6rem;
-  /* min-height: 5vh; */
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  /* position: relative; */
+  /* width: 300px; */
+  height: auto;
+  border-radius: 3px;
+  height: 100%;
+}
+
+.card h2 {
+  /* position: absolute; */
+  /* top: 10px; */
+  /* left: -10px; */
+  background-color: var(--h2-bg-color);
+  color: var(--h2-font-color);
+  /* border-radius: 3px; */
+  border-top: 1px var(--main-bg) solid;
+  border-bottom: 3px var(--main-bg) solid;
+  font-size: large;
+  text-align: center;
+  width: 100%;
+  align-content: center;
+  padding: 10px 20px;
+}
+
+.card div {
+  margin-top: 15px;
+  padding-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.left-item {
+  text-align: right;
+  font-weight: bold;
 }
