@@ -1,0 +1,32 @@
+@media only screen and (min-width: 40em) {
+  /* .hero {
+    display: block;
+    /* border: var(--main-font-color) 1px solid; */
+  /* width: 800px; */
+
+  /* height: auto; */
+  /* object-fit: cover;
+ } */
+
+  .container {
+    /* height: 463px; */
+    overflow: hidden;
+    /* width: 800px; */
+    /* margin: 10px; */
+
+  }
+
+  .hero {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .hero img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    /* object-fit: cover; */
+  }
+}
