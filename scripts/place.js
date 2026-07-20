@@ -2,9 +2,7 @@ let T_a = 10;
 let v = 5;
 
 function calculateWindChill(T_a, v) {
-  WindChill = 13.12 + 0.6215 * T_a - 11.37 * v ** 0.16 + 0.3965 * T_a * v ** 0.16;
-  WindChill = WindChill.toFixed(2)
-  return `${WindChill}º C`;
+  return (13.12 + 0.6215 * T_a - 11.37 * v ** 0.16 + 0.3965 * T_a * v ** 0.16).toFixed(2) + 'º C';
 }
 
 
