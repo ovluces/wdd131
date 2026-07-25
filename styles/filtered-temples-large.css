@@ -1,0 +1,60 @@
+:root {
+  --header-footer-bg-color: #1d4d72;
+  --header-footer-font-color: #fff;
+  --header-footer-font-alt-color: #ffdc65;
+  --menu-bg-color: #333333;
+  --menu-font-color: #fff;
+  --navigation-font-color: #fff;
+  --navigation-hover-color: #f7d050;
+  --navigation-hover-font-color: #000;
+
+  --h2-bg-color: rgb(0, 0, 128, 100%);
+  --h2-bg-tr-color: rgb(0, 0, 128, 90%);
+  --h2-font-color: rgb(255, 255, 255, 100%);
+  --main-bg: #fff;
+  --main-font-color: #000;
+  --card-font-h3-title: #000;
+  --card-font-color: #000;
+  --card-bg-color: rgb(220, 220, 41);
+  --card-shadow-color: rgb(117, 117, 115);
+  --card-shadow-hover-color: #1d4d72;
+  --card-border-color: rgb(0, 0, 0);
+}
+
+@media only screen and (min-width: 40em) {
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li {
+    display: block;
+  }
+
+  .navigation a {
+    text-align: center;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 3vh;
+    align-items: start;
+  }
+
+  .ficha h3 {
+    font-size: 1.6vw;
+  }
+
+  .ficha p {
+    font-size: 1.2vw;
+  }
+
+  main h2 {
+    font-size: 1.8vw;
+  }
+
+}
