@@ -102,33 +102,15 @@ const temples = [
 
 const allLink = document.querySelector("#all");
 const oldLink = document.querySelector("#old");
-// const nonUtahLink = document.querySelector("#nonutah");
 const newLink = document.querySelector("#new");
 const largeLink = document.querySelector("#large");
 const smallLink = document.querySelector("#small");
 
 allLink.addEventListener(
   "click", () => {
-    // let nonutah = temples.filter(temple => !temple.location.includes("Utah"));
-    // createTempleCard(nonutah);
-
     createTempleCard(temples);
     document.getElementById('filterType').innerHTML = "Home";
   });
-
-// nonUtahLink.addEventListener(
-//   "click", () => {
-//     // let nonutah = temples.filter(temple => !temple.location.includes("Utah"));
-//     // createTempleCard(nonutah);
-//     // const resultado = miArray.map(item => {
-//     //   if (item.includes(",")) {
-//     //     return item.split(",");
-//     //   }
-//     //   return item;
-//     // });
-//     document.getElementById('filterType').innerHTML = "NonUtah";
-//     createTempleCard(temples.filter(temple => temple.location.includes("Utah")));
-//   });
 
 oldLink.addEventListener(
   "click", () => {
@@ -176,7 +158,6 @@ function createTempleCard(filteredTemples) {
     let name = document.createElement("h3");
     let location = document.createElement("p");
     let dedication = document.createElement("p");
-    // let tipo = document.createElement("p");
     let area = document.createElement("p");
     let img = document.createElement("img");
 
@@ -185,7 +166,6 @@ function createTempleCard(filteredTemples) {
     name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
-    // tipo.innerHTML = `<span class="label">Tipo:</span> ${temple.year}`;
     area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
     img.setAttribute("src", temple.imageUrl);
     img.setAttribute("alt", `${temple.templeName} Temple`);
@@ -195,7 +175,6 @@ function createTempleCard(filteredTemples) {
     datos.appendChild(name);
     datos.appendChild(location);
     datos.appendChild(dedication);
-    // card.appendChild(tipo);
     datos.appendChild(area);
     card.appendChild(datos);
     card.appendChild(img);
