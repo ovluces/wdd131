@@ -1,26 +1,3 @@
-:root {
-  --header-footer-bg-color: rgb(29, 77, 114);
-  --header-footer-font-color: rgb(255, 255, 255);
-  --header-footer-font-alt-color: rgb(255, 220, 101);
-  --menu-bg-color: rgb(51, 51, 51);
-  --menu-font-color: rgb(255, 255, 255);
-  --navigation-font-color: rgb(255, 255, 255);
-  --navigation-hover-color: rgb(247, 208, 80);
-  --navigation-hover-font-color: rgb(0, 0, 0);
-
-  --h2-bg-color: rgb(0, 0, 128, 100%);
-  --h2-bg-tr-color: rgb(0, 0, 128, 90%);
-  --h2-font-color: rgb(255, 255, 255, 100%);
-  --main-bg: rgb(255, 255, 255);
-  --main-font-color: rgb(0, 0, 0);
-  --card-font-h3-title: #000;
-  --card-font-color: rgb(0, 0, 0);
-  --card-bg-color: rgb(220, 220, 41);
-  --card-shadow-color: rgb(117, 117, 115);
-  --card-shadow-hover-color: rgb(29, 77, 114);
-  --card-border-color: rgb(0, 0, 0);
-}
-
 @media only screen and (min-width: 40em) {
   .navigation {
     display: flex;
