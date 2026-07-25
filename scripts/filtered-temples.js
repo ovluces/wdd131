@@ -162,7 +162,7 @@ function createTempleCard(filteredTemples) {
     let img = document.createElement("img");
 
     card.classList.add('ficha');
-    card.classList.add('hover');
+    // card.classList.add('hover');
     name.textContent = temple.templeName;
     location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
     dedication.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;

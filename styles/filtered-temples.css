@@ -98,9 +98,9 @@ figcaption {
   text-align: center;
 }
 
-.hover:hover {
+/* .hover:hover {
   box-shadow: 0 0 10px var(--card-shadow-hover-color);
-}
+} */
 
 footer {
   max-width: 80%;
