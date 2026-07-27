@@ -17,9 +17,10 @@
 
   .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     grid-gap: 3vh;
     align-items: start;
+    border: 2px dashed forestgreen;
   }
 
   .ficha h3 {
@@ -33,5 +34,23 @@
   main h2 {
     font-size: 1.8vw;
   }
+
+}
+
+@media only screen and (min-width: 56em) {
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
+    grid-gap: 3vh;
+    align-items: start;
+    border: 2px dashed red;
+  }
+
+  .ficha p {
+    font-size: 1.1vw;
+  }
+
 
 }
