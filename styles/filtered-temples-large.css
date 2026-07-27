@@ -20,7 +20,7 @@
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     grid-gap: 3vh;
     align-items: start;
-    border: 2px dashed forestgreen;
+    /* border: 2px dashed forestgreen; */
   }
 
   .ficha h3 {
@@ -37,7 +37,7 @@
 
 }
 
-@media only screen and (min-width: 56em) {
+@media only screen and (min-width: 65em) {
 
 
   .container {
@@ -45,7 +45,7 @@
     grid-template-columns: repeat(auto-fit, minmax(30%, 1fr));
     grid-gap: 3vh;
     align-items: start;
-    border: 2px dashed red;
+    /* border: 2px dashed red; */
   }
 
   .ficha p {

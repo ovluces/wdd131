@@ -13,8 +13,8 @@ document.getElementById('currentyear').innerHTML = new Date().getFullYear();
 
 const temples = [
   {
-    templeName: "Aba Nigeria xxxxxxxxxx xxxxxxx",
-    location: "Aba, Nigeria, xxxx, xxxxxxx xxx xxx xx xxx xx xxx xx xx x xxx xxx xx xxx xxx xxx xx xx xx x",
+    templeName: "Aba Nigeria",
+    location: "Aba, Nigeria",
     dedicated: "2005, August, 7",
     area: 11500,
     imageUrl:
