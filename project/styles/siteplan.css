@@ -112,6 +112,30 @@ h4 {
   flex: 1 1 auto;
 }
 
+.color1 {
+  background-color: var(--h4-bg-color);
+  color: white;
+}
+
+.color2 {
+  background-color: rgb(26, 63, 45);
+  color: white;
+}
+
+.color3 {
+  background-color: rgb(71, 48, 30);
+  color: white;
+}
+
+.color4 {
+  background-color: rgb(130, 80, 53);
+  color: white;
+}
+
+.color5 {
+  background-color: rgb(246, 239, 221);
+  color: black;
+}
 
 .container {
   display: block;
