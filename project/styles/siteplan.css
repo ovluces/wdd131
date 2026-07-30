@@ -17,10 +17,10 @@
   --h2-bg-color: rgb(26, 63, 45);
   --h2-font-color: rgb(255, 255, 255, 100%);
 
-  --h3-bg-color: rgb(130, 80, 53);
+  --h3-bg-color: rgb(91, 56, 36);
   --h3-font-color: rgb(255, 255, 255, 100%);
 
-  --h4-bg-color: rgb(80, 130, 71);
+  --h4-bg-color: rgb(57, 95, 51);
   --h4-font-color: rgb(255, 255, 255, 100%);
 
   --main-bg: rgb(246, 239, 221);
@@ -48,6 +48,7 @@ body {
 
 .background {
   background-color: var(--body-bg-color);
+  color: var(--paragraphs-font-color);
   background-image: linear-gradient(var(--body-bg-color), var(--main-bg));
   border: 1px solid black;
   height: 100px;
@@ -100,11 +101,12 @@ h4 {
 }
 
 .colores {
+  color: var(--paragraphs-font-color);
   display: block;
   width: 25%;
   height: 50px;
   align-self: center;
-
+  margin-bottom: 15px;
 }
 
 .center {
@@ -114,22 +116,22 @@ h4 {
 
 .color1 {
   background-color: var(--h4-bg-color);
-  color: white;
+  color: var(--paragraphs-font-color);
 }
 
 .color2 {
   background-color: rgb(26, 63, 45);
-  color: white;
+  color: var(--paragraphs-font-color);
 }
 
 .color3 {
   background-color: rgb(71, 48, 30);
-  color: white;
+  color: var(--paragraphs-font-color);
 }
 
 .color4 {
   background-color: rgb(130, 80, 53);
-  color: white;
+  color: var(--paragraphs-font-color);
 }
 
 .color5 {
