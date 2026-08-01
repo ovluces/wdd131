@@ -1,15 +1,15 @@
 :root {
-    --header-footer-bg-color: #1d4d72;
+    --header-footer-bg-color: #192d3d;
     --header-footer-font-color: #fff;
     --header-footer-font-alt-color: #ffdc65;
     --header-footer-border-color: #000000;
-    --menu-bg-color: #333333;
+    --menu-bg-color: #ebeaea;
     --navigation-font-color: #ffffff;
     --navigation-hover-color: #f7d050;
     --navigation-hover-font-color: #000000;
     --main-bg: #ffffff;
     --main-font-color: #000000;
-    --card-bg-title: #1d4d72;
+    --card-bg-title: #a5a5a5;
     --required-font-color: #ff0000;
 }
 
@@ -26,7 +26,7 @@ body {
     display: block;
     justify-self: center;
     font-family: "Roboto", sans-serif;
-    width: 75%;
+    width: 435px;
 }
 
 
@@ -70,6 +70,7 @@ main {
     padding: 1rem;
     border: 1px solid var(--header-footer-border-color);
     border-radius: 7px;
+    background-color: var(--menu-bg-color);
 }
 
 .wf1 fieldset {
@@ -96,7 +97,9 @@ main {
 
 /* stars */
 input[type="radio"] {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    position: absolute;
 }
 
 .wf1 input[type="checkbox"]:hover {
@@ -112,14 +115,14 @@ input[type="radio"] {
     flex-direction: row-reverse;
     justify-content: flex-end;
     align-items: flex-start;
-
+    background-color: var(--card-bg-title);
 }
 
 .stars>label {
     font-size: 1.7rem;
-    color: var(--card-bg-title);
+    color: var(--header-footer-font-color);
     cursor: pointer;
-    padding: 0;
+    padding: 2px;
 }
 
 /* Highlight stars on hover */
@@ -131,9 +134,10 @@ input[type="radio"] {
 /* Maintain highlight on the selected star and its preceding siblings */
 .stars input:checked~label {
     color: var(--header-footer-font-alt-color);
+    /* -webkit-text-stroke: 1px var(--header-footer-font-color); */
+    /* Grosor y color del borde */
+    /* text-stroke: 1px var(--main-font-color); */
 }
-
-/* .wf1 div {} */
 
 textarea {
     width: 100%;
@@ -176,7 +180,7 @@ textarea {
 }
 
 .wf1 input[type="submit"]:hover {
-    color: var(--header-footer-font-alt-color);
+    /* color: var(--header-footer-font-alt-color); */
     box-shadow: 1px 1px 4px var(--menu-bg-color);
 }
 
@@ -185,12 +189,3 @@ textarea {
     font-weight: bolder;
     font-size: larger;
 }
-
-/* .wf1 input:required {
-    border-right: solid 8px red;
-}
-
-.wf1 input:required:valid {
-    border-right: solid 8px green;
-
-} */
