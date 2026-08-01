@@ -1,15 +1,15 @@
 :root {
     --header-footer-bg-color: #192d3d;
     --header-footer-font-color: #fff;
-    --header-footer-font-alt-color: #ffdc65;
+    --header-footer-font-alt-color: #ffc507;
     --header-footer-border-color: #000000;
     --menu-bg-color: #ebeaea;
     --navigation-font-color: #ffffff;
-    --navigation-hover-color: #f7d050;
+    --navigation-hover-color: #ffc507;
     --navigation-hover-font-color: #000000;
     --main-bg: #ffffff;
     --main-font-color: #000000;
-    --card-bg-title: #a5a5a5;
+    --card-bg-title: #767676;
     --required-font-color: #ff0000;
 }
 
@@ -119,25 +119,27 @@ input[type="radio"] {
 }
 
 .stars>label {
-    font-size: 1.7rem;
-    color: var(--header-footer-font-color);
+    font-size: 1.5rem;
+    color: var(--header-footer-border-color);
     cursor: pointer;
-    padding: 2px;
+    padding: 4px;
 }
 
 /* Highlight stars on hover */
 .stars label:hover,
 .stars label:hover~label {
-    color: var(--header-footer-font-alt-color);
+    color: var(--header-footer-font-color);
+    -webkit-text-stroke: 1px var(--header-footer-font-alt-color);
+    paint-order: stroke fill;
 }
 
 /* Maintain highlight on the selected star and its preceding siblings */
 .stars input:checked~label {
-    color: var(--header-footer-font-alt-color);
-    /* -webkit-text-stroke: 1px var(--header-footer-font-color); */
-    /* Grosor y color del borde */
-    /* text-stroke: 1px var(--main-font-color); */
+    color: var(--header-footer-font-color);
+    -webkit-text-stroke: 2px var(--header-footer-font-alt-color);
+    paint-order: stroke fill;
 }
+
 
 textarea {
     width: 100%;
