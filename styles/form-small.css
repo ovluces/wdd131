@@ -103,7 +103,7 @@ input[type="radio"] {
 }
 
 .wf1 input[type="checkbox"]:hover {
-    box-shadow: 1px 1px 4px var(--menu-bg-color);
+    box-shadow: 1px 1px 4px var(--header-footer-bg-color);
 }
 
 .wf1 input[type="checkbox"] {
