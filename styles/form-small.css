@@ -1,0 +1,202 @@
+:root {
+    --header-footer-bg-color: #1d4d72;
+    --header-footer-font-color: #fff;
+    --header-footer-font-alt-color: #ffdc65;
+    --header-footer-border-color: #000000;
+    --menu-bg-color: #333333;
+    --navigation-font-color: #ffffff;
+    --navigation-hover-color: #f7d050;
+    --navigation-hover-font-color: #000000;
+    --main-bg: #ffffff;
+    --main-font-color: #000000;
+    --card-bg-title: #1d4d72;
+    --required-font-color: #ff0000;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    display: block;
+    justify-self: center;
+    font-family: "Roboto", sans-serif;
+    width: 75%;
+}
+
+
+/*----------- HEADER --------------*/
+header,
+footer {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--header-footer-bg-color);
+    color: var(--header-footer-font-color);
+    border: 1px solid var(--header-footer-border-color);
+    border-radius: 7px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*----------- MAIN --------------*/
+main {
+    min-height: 2rem;
+}
+
+.required::after {
+    content: " *";
+    color: var(--required-font-color);
+}
+
+.optional::after {
+    content: " (Optional)";
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--header-footer-bg-color);
+}
+
+/* FORM STYLING */
+.wf1 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--header-footer-border-color);
+    border-radius: 7px;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0 0 0;
+    border: 1px solid var(--header-footer-border-color);
+    border-radius: 7px;
+    padding: .5rem;
+    max-width: 400px;
+}
+
+.wf1 fieldset span {
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--header-footer-bg-color);
+}
+
+.wf1 label {
+    display: block;
+    color: var(--main-font-color);
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+/* stars */
+input[type="radio"] {
+    display: none;
+}
+
+.wf1 input[type="checkbox"]:hover {
+    box-shadow: 1px 1px 4px var(--menu-bg-color);
+}
+
+.wf1 input[type="checkbox"] {
+    accent-color: var(--header-footer-bg-color);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: flex-start;
+
+}
+
+.stars>label {
+    font-size: 1.7rem;
+    color: var(--card-bg-title);
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Highlight stars on hover */
+.stars label:hover,
+.stars label:hover~label {
+    color: var(--header-footer-font-alt-color);
+}
+
+/* Maintain highlight on the selected star and its preceding siblings */
+.stars input:checked~label {
+    color: var(--header-footer-font-alt-color);
+}
+
+/* .wf1 div {} */
+
+textarea {
+    width: 100%;
+    max-width: 400px;
+    min-height: 5lh;
+    resize: vertical;
+    border: solid 1px var(--header-footer-border-color);
+    font-family: "Roboto", sans-serif;
+    color: var(--header-footer-bg-color);
+    padding: .75rem;
+    font-size: 1rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select {
+    font-size: 1rem;
+    display: block;
+    border: solid 1px var(--header-footer-border-color);
+    padding: .75rem;
+    color: var(--header-footer-bg-color);
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="submit"] {
+    display: block;
+    border: none;
+    background-image: linear-gradient(var(--header-footer-bg-color), var(--header-footer-border-color));
+    color: var(--header-footer-font-color);
+    border-radius: 7px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.wf1 input[type="submit"]:hover {
+    color: var(--header-footer-font-alt-color);
+    box-shadow: 1px 1px 4px var(--menu-bg-color);
+}
+
+.visits {
+    color: var(--header-footer-bg-color);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+/* .wf1 input:required {
+    border-right: solid 8px red;
+}
+
+.wf1 input:required:valid {
+    border-right: solid 8px green;
+
+} */

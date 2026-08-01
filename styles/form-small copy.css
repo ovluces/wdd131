@@ -1,0 +1,206 @@
+:root {
+    --header-footer-bg-color: #1d4d72;
+    --header-footer-font-color: #fff;
+    --header-footer-font-alt-color: #ffdc65;
+    --header-footer-border-color: #000000;
+    --menu-bg-color: #333333;
+    --navigation-font-color: #ffffff;
+    --navigation-hover-color: #f7d050;
+    --navigation-hover-font-color: #000000;
+    --main-bg: #ffffff;
+    --main-font-color: #000000;
+    --card-bg-title: #1d4d72;
+    --required-font-color: #ff0000;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+/* html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+} */
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    /* -moz-box-sizing: border-box; */
+    /* -webkit-box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    display: block;
+    justify-self: center;
+    font-family: "Roboto", sans-serif;
+    width: 75%;
+}
+
+
+/*----------- HEADER --------------*/
+header,
+footer {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: var(--header-footer-bg-color);
+    color: var(--header-footer-font-color);
+    border: 1px solid var(--header-footer-border-color);
+    border-radius: 7px;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*----------- MAIN --------------*/
+main {
+    /* padding: 0 2%; */
+    min-height: 20rem;
+}
+
+.required::after {
+    content: " *";
+    color: var(--required-font-color);
+}
+
+.optional::after {
+    content: " (Optional)";
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--header-footer-bg-color);
+}
+
+/* FORM STYLING */
+.wf1 {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+    border: 1px solid var(--header-footer-border-color);
+    border-radius: 7px;
+}
+
+.wf1 fieldset {
+    margin: 2rem 0;
+    border: 1pz solid gray;
+    border-radius: 7px;
+    padding: .5rem 2%;
+}
+
+.wf1 fieldset span {
+    font-size: .8rem;
+    font-style: italic;
+    color: var(--header-footer-bg-color);
+}
+
+/*
+.wf1 legend {    color: blue;    padding: 0 .5rem;} */
+
+.wf1 label {
+    display: block;
+    color: var(--main-font-color);
+    border: 1px dashed violet;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem 0 0 0;
+}
+
+/* stars */
+input[type="radio"] {
+    display: none;
+    /* color: red; */
+    /* position: relative; */
+    /* caret-color: var(--header-footer-bg-color); */
+    /* border: 1px dashed green; */
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    border: 1px dashed brown;
+    height: auto;
+}
+
+.stars>label {
+    /* color: var(--header-footer-font-alt-color); */
+    color: var(--header-footer-bg-color);
+    width: 2rem;
+    height: auto;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    /* margin-left: 0; */
+    /* display: flex; */
+    /* align-items: flex-start; */
+    /* caret-color: rgba(0, 0, 0, 0); */
+    /* remove blinking cursor*/
+}
+
+.stars>label:hover {
+    /* color: var(--header-footer-bg-color); */
+    color: var(--header-footer-font-alt-color);
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+    color: var(--header-footer-font-alt-color);
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    color: blue;
+    font-size: 0.9rem;
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"],
+.wf1 input[type="email"],
+.wf1 input[type="url"],
+.wf1 input[type="date"],
+.wf1 select,
+.wf1 input[type="number"] {
+    background-color: lightgray;
+    display: block;
+    border: solid 1pz gray;
+    border-radius: 6px;
+    padding: .75rem;
+    color: gray;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+
+}
+
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-image: linear-gradient(darkred, black);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.wf1 input:required {
+    border-right: solid 8px red;
+
+}
+
+.wf1 input:required:valid {
+    border-right: solid 8px greed;
+
+}
+
+.alternative-color {
+    color: var(--header-footer-font-alt-color);
+}
