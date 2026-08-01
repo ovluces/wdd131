@@ -108,6 +108,7 @@ input[type="radio"] {
 
 .wf1 input[type="checkbox"] {
     accent-color: var(--header-footer-bg-color);
+    margin-right: 7px;
 }
 
 .stars {
