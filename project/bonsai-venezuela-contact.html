@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Project - Bonsai in Venezuela - Maestros</title>
+  <meta name="description" content="Project - Bonsai in Venezuela. CSS 131 Week 06.">
+  <meta name="author" content="Ovidio J. Luces M.">
+  <link rel="stylesheet" href="styles/bonsai-venezuela.css">
+  <link rel="stylesheet" href="styles/bonsai-venezuela-form.css">
+  <link rel="stylesheet" href="styles/bonsai-venezuela-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/bonsai_venezuela.js" defer></script>
+  <script src="scripts/bonsai_venezuela_contact.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="bonsai-venezuela.html"><img src="images/logo-bonsai-venezuela-100x100.webp"
+        alt="Logo Bonsai en Venezuela"></a>
+    <a id="menu"></a>
+    <nav>
+      <div class="botones-idioma">
+        <button onclick="cambiarIdioma('en')">English</button>
+        <button onclick="cambiarIdioma('es')">Español</button>
+      </div>
+      <ul class="navigation">
+        <li><a href="bonsai-venezuela.html" data-translate="home">Home</a></li>
+        <li><a href="bonsai-venezuela-masters.html" data-translate="masters">Masters</a></li>
+        <li><a href="bonsai-venezuela-societys.html" data-translate="societys">Societies</a></li>
+        <li><a class="active" href="bonsai-venezuela-contact.html" data-translate="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="ficha">
+      <h1 data-translate="titulo">Contact Us</h1>
+
+
+      <form method="get" action="bonsai-venezuela-review.html" class="wf1">
+        <label for="name" class="required" data-translate="name">Your Name</label>
+        <input type="text" name="name" id="name" autocomplete="name" required>
+        <label for="email" class="required" data-translate="email">Your Email</label>
+        <input type="email" name="email" id="email" autocomplete="email" placeholder="someone@email.com" required>
+        <label for="message" data-translate="message">Message (Optional)</label>
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" value="Post Review" data-translate="submit">
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"> </span> -
+      <span>Ovidio J. Luces M. - Venezuela - Bolivar</span>
+    </p>
+    <p id="lastModified">
+    </p>
+    <p data-translate="visitas">Visits: </p><span class="visits">x</span>
+  </footer>
+</body>
+
+</html>

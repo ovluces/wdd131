@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 - Project - Bonsai in Venezuela</title>
+  <meta name="description" content="Project - Bonsai in Venezuela. CSS 131 Week 06.">
+  <meta name="author" content="Ovidio J. Luces M.">
+  <link rel="stylesheet" href="styles/bonsai-venezuela.css">
+  <link rel="stylesheet" href="styles/bonsai-venezuela-large.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="scripts/bonsai_venezuela.js" defer></script>
+  <script src="scripts/bonsai_venezuela_home.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <a href="bonsai-venezuela.html"><img src="images/logo-bonsai-venezuela-100x100.webp"
+        alt="Logo Bonsai en Venezuela"></a>
+    <a id="menu"></a>
+    <nav>
+      <div class="botones-idioma">
+        <button onclick="cambiarIdioma('en')" id="engButton">English</button>
+        <button onclick="cambiarIdioma('es')" id="spaButton">Español</button>
+      </div>
+      <ul class="navigation">
+        <li><a class="active" href="bonsai-venezuela.html" data-translate="home">Home</a></li>
+        <li><a href="bonsai-venezuela-masters.html" data-translate="masters">Masters</a></li>
+        <li><a href="bonsai-venezuela-societys.html" data-translate="societys">Societies</a></li>
+        <li><a href="bonsai-venezuela-contact.html" data-translate="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="ficha">
+      <h1 data-translate="titulo">Bonsai in Venezuela</h1>
+      <div class="carrusel-contenedor">
+        <button id="btn-izq" class="boton">&lt;</button>
+        <div class="carrusel-ventana">
+          <div class="carrusel-pista" id="pista">
+            <figure>
+              <img class="hover" src="images/placeholder.webp" alt="Bonsai Imagen" width="250" height="250" placeholder>
+              <figcaption>Bonsai Imagen</figcaption>
+            </figure>
+          </div>
+        </div>
+        <button id="btn-der" class="boton">&gt;</button>
+      </div>
+    </div>
+    <div class="ficha">
+      <h2 data-translate="conceptos">Basic Bonsai Concepts</h2>
+      <div class="container">
+        <p class="post-it" data-translate="conceptos1">Bonsai is the traditional art of cultivating live trees in small
+          pots, imitating the shape and harmony of nature's large
+          trees. This is achieved by combining aesthetic design techniques with constant care for the plant.
+        </p>
+        <p class="post-it" data-translate="conceptos2">The word comes from Japanese and means "tree in a tray" or
+          "bowl." The main goal is to make a small tree look like a
+          giant, old specimen growing freely in the countryside.
+        </p>
+        <p class="post-it" data-translate="conceptos3">
+          New branches and shoots are pruned to maintain the desired shape and control the direction of growth. Copper
+          or aluminum
+          wire is wrapped around the branches to bend and guide them with aesthetic precision. The roots are trimmed in
+          a controlled manner to limit the tree's size and encourage finer, new roots.</p>
+        <div class="post-it">
+          <p data-translate="conceptos4">
+            Essential Care:
+          </p>
+          <p data-translate="conceptos5">Because there is little soil, the water evaporates quickly; you have to water
+            as soon as the substrate starts to dry
+            out.</p>
+          <p data-translate="conceptos6">The soil should drain water very well but retain just enough moisture to
+            oxygenate the roots.</p>
+          <p data-translate="conceptos7">Most bonsai are outdoor trees and need direct sunlight and fresh air to live
+            healthy lives.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; <span id="currentyear"> </span> -
+      <span>Ovidio J. Luces M. - Venezuela - Bolivar</span>
+    </p>
+    <p id="lastModified">
+    </p>
+    <p data-translate="visitas">Visits: </p><span class="visits">x</span>
+  </footer>
+</body>
+
+</html>
