@@ -129,6 +129,7 @@ nav {
   height: 3rem;
   padding: 0.65rem 1.2rem;
   color: var(--navigation-font-color);
+  background-color: var(--navigation-bg-color);
 }
 
 .navigation a:active,
@@ -202,7 +203,7 @@ h1 {
   padding: 15px;
   border-radius: 15px;
   text-align: center;
-  height: 4rem;
+  height: auto;
   align-content: center;
   font-size: 2.2rem;
 }
