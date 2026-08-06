@@ -224,7 +224,6 @@ h2 {
   text-align: center;
   width: auto;
   height: auto;
-  border: 1px solid var(--card-border-color);
   padding: 1rem 0.1rem 0.5rem 0.1rem;
   margin: 15px 0;
 }
